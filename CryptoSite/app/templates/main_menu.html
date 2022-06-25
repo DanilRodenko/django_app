@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block content %}
+<h1><center>DR CryptoApp</center></h1>
+<form method="post" action="login">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit">
+</form>
+<div class="row">
+    <div class="col-6 style=padding: 0px">
+        <a class="btn btn-primary btn-block" href="currency" role="button">Currency</a>
+    </div>
+    <div class="col-6 style=padding: 0px">
+        <a class="btn btn-primary btn-block" href="news" role="button">News</a>
+    </div>
+</div>
+{% endblock %}

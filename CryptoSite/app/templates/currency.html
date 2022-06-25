@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+
+<ul>{% for item in menu %}
+    <li>{{item}}</li>
+    {% endfor %}
+</ul>
+<h1><font color="blue"><b>{{ header }}</b></font></h1>
+
+<h2><font color="blue">BTC {{ BTCUSD }} </font></h2>
+<h2><font color="blue">ETH {{ ETHUSD }}</font></h2>
+<h2><font color="blue">LTC {{ LTCUSD }}</font></h2>
+<h2><font color="blue">DOGE {{ DOGEUSD }}</font></h2>
+<h2><font color="blue">XRP {{ XRPUSD }}</font></h2>
+<div class="col-4"><a class="btn btn-primary btn-block" href="main_menu" role="button">Back to main menu</a></div>
+{% endblock %}

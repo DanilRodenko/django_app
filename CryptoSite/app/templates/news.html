@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+{% block content %}
+<h3> {{ header }}</h3>
+<ul>
+{% for tweets in news %}
+    <li>{{ tweets }}</li>
+{% endfor %}
+</ul>
+<div class="col-4"><a class="btn btn-primary btn-block" href="main_menu" role="button">Back to main menu</a></div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block content %}
+Incorrect Login or/and password <br>
+Please, try again
+<form method="post" action="login">
+    <input type="text" name="username" class="form-control" placeholder="login">
+    <input type="password" name="password" class="form-control" placeholder="password">
+    <input type="submit" name="enter"  class="btn btn-primary btn-block" role="button" value="Enter">
+    <a class="btn btn-warning btn-block" href="registration" role="button">Registration</a>
+    <a class="btn btn-primary btn-block" href="main_page" role="button">Main Menu</a>
+</form>
+{% endblock %}
